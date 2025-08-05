@@ -36,7 +36,7 @@ Return the best-matching load based on optional filters.
 
 ```bash
 curl -G https://happyrobot-take-home.fly.dev/loads \
-  -H "x-api-key: ghEkud182u19" \
+  -H "x-api-key: <enter_api_key>" \
   --data-urlencode "origin=Chicago, IL" \
   --data-urlencode "equipment_type=Dry Van"
 ```
@@ -66,7 +66,7 @@ Submit structured call outcome data.
 
 ```bash
 curl -X POST https://happyrobot-take-home.fly.dev/report \
-  -H "x-api-key: ghEkud182u19" \
+  -H "x-api-key: <enter_api_key>" \
   -H "Content-Type: application/json" \
   -d '{"origin":"Chicago, IL","destination":"Dallas, TX","equipment_type":"Dry Van","loadboard_rate":2200,"agreed_rate":2100,"negotiation_result":"accepted","call_duration_sec":142}'
 ```
@@ -124,5 +124,10 @@ fly deploy
 ### Notes:
 - Logs are saved in `call_reports.jsonl` for use in dashboard analytics.
 - API will return a top match for any valid `/loads` query.
+
+### Future Updates:
+- Additional Metrics
+- Data persistence between restarts
+- Corrected call transfer to sales rep
 
 ---
