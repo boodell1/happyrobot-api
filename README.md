@@ -17,11 +17,7 @@ This is a mock logistics API built for a Forward Deployed Engineering take-home 
 
 ## 🔑 Authentication
 
-All endpoints (except `/dashboard`) require a valid `x-api-key` header:
-
-```
-x-api-key: ghEkud182u19
-```
+All endpoints (except `/dashboard`) require a valid `x-api-key` header. Contact @austenboodell@gmail.com for access. 
 
 ---
 
